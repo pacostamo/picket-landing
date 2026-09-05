@@ -1,5 +1,0 @@
-const menu=document.querySelector('.menu-btn'), mobile=document.querySelector('.mobile-nav');
-menu?.addEventListener('click',()=>mobile.classList.toggle('open'));
-document.querySelectorAll('.mobile-nav a').forEach(a=>a.addEventListener('click',()=>mobile.classList.remove('open')));
-const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
-const form=document.getElementById('contactForm');form?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);const subject=encodeURIComponent('Solicitud de demostración Picket — '+d.get('school'));const body=encodeURIComponent(`Hola, equipo Picket.\n\nMe gustaría solicitar una demostración de Picket.\n\nNombre: ${d.get('name')}\nColegio: ${d.get('school')}\nEmail: ${d.get('email')}\n\nMensaje:\n${d.get('message')||'Quisiera conocer más sobre Picket.'}`);location.href=`mailto:soporte@picket.app?subject=${subject}&body=${body}`});
