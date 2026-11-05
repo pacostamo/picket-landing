@@ -177,3 +177,16 @@ footer{background:#070d18;color:#9ba7b8;padding:28px 0}.footer-inner{display:fle
     max-width: 190px;
   }
 }
+
+
+/* Disponibilidad en tiendas — visible desde el primer pantallazo */
+.store-availability{margin:22px 0 8px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.store-availability-label{font-size:10px;font-weight:800;letter-spacing:1.7px;color:#1769ff}
+.store-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.store-button{display:inline-flex;align-items:center;gap:10px;min-width:158px;padding:9px 15px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:#0b1220;color:#fff;text-decoration:none;transition:transform .2s ease,background .2s ease,box-shadow .2s ease;box-shadow:0 8px 20px rgba(11,18,32,.12)}
+.store-button:hover{transform:translateY(-2px);background:#14233d;box-shadow:0 12px 24px rgba(11,18,32,.18)}
+.store-button svg{width:25px;height:25px;flex:0 0 25px}
+.store-button span{display:flex;flex-direction:column;line-height:1.15}
+.store-button small{font-size:9px;opacity:.82;letter-spacing:.2px}
+.store-button strong{font-size:15px;font-weight:700;letter-spacing:-.2px}
+@media(max-width:640px){.store-availability{margin:19px 0 7px}.store-buttons{width:100%;gap:8px}.store-button{min-width:0;flex:1;padding:9px 10px;justify-content:center}.store-button strong{font-size:13px}.store-button small{font-size:8px}}
